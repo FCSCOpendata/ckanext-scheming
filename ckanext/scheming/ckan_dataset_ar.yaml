@@ -84,6 +84,19 @@ dataset_fields:
   form_attrs: {'class': 'form-control'}
 
 
+- field_name: start_period
+  label: Start Period
+  form_placeholder: 2019-05
+  preset: datepick
+  form_attrs: {'data-module': 'datepicker', 'data-date-format': 'yyyy-mm'}
+
+- field_name: end_period
+  label: end Period
+  form_placeholder: 2022-05
+  preset: datepick
+  form_attrs: {'data-module': 'datepicker', 'data-date-format': 'yyyy-mm'}
+
+
 resource_fields:
 
 - field_name: url
