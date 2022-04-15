@@ -20,3 +20,13 @@ multiple_text:
       - base/main
   contents:
     - js/scheming-multiple-text.js
+
+upload_js:
+  filters: rjsmin
+  output: ckanext-scheming/%(version)s_js/scheming-upload.js
+  extra:
+    preload:
+      - base/main
+      - base/ckan
+  contents:
+    - js/scheming-upload.js

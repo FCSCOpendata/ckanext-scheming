@@ -1,3 +1,4 @@
+{% include 'scheming/snippets/upload.html' %}
 {% import 'macros/form.html' as form %}
 {% if data.icon_url %}
     {% set is_upload = data.icon_url.startswith('http') %}
