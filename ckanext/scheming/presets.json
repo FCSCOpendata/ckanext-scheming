@@ -169,6 +169,13 @@
         "form_snippet": "markdown.html",
         "display_snippet": "markdown.html"
       }
+    },
+    {
+      "preset_name": "datepick",
+      "values": {
+        "form_snippet": "datepick.html",
+        "validators": "ignore_missing convert_to_json_if_date"
+      }
     }
   ]
 }
