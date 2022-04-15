@@ -88,8 +88,8 @@
       "preset_name": "group_icon",
       "values": {
         "validators": "ignore_missing unicode remove_whitespace",
-        "form_snippet": "upload.html",
-        "form_placeholder": "http://example.com/my-camel-photo.jpg",
+        "form_snippet": "icon_upload.html",
+        "": "http://example.com/my-camel-photo.jpg",
         "upload_field": "icon_upload",
         "upload_clear": "clear_upload",
         "upload_label": "Icon"
