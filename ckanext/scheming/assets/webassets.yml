@@ -31,3 +31,13 @@ mainschema-js:
     - vendor/jquery.js
     - vendor/datepicker/js/bootstrap-datepicker.js
     - js/datepicker.js
+
+upload_js:
+  filters: rjsmin
+  output: ckanext-scheming/%(version)s_js/scheming-upload.js
+  extra:
+    preload:
+      - base/main
+      - base/ckan
+  contents:
+    - js/scheming-upload.js
