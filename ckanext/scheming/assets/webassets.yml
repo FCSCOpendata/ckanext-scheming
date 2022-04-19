@@ -21,6 +21,18 @@ multiple_text:
   contents:
     - js/scheming-multiple-text.js
 
+
+datepicker_js: 
+  filters: rjsmin
+  output: ckanext-scheming/%(version)s_bootstrap-datepicker.js
+  extra:
+    preload:
+      - base/main
+  contents:
+    - vendor/jquery.js
+    - js/bootstrap-datepicker.js
+    - js/datepicker.js
+
 upload_js:
   filters: rjsmin
   output: ckanext-scheming/%(version)s_js/scheming-upload.js
