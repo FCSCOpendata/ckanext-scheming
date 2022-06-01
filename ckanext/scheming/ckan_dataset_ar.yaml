@@ -83,6 +83,10 @@ dataset_fields:
   display_email_name_field: maintainer
   form_attrs: {'class': 'form-control'}
 
+- field_name: publishing_status
+  label: Publishing Status
+  form_snippet: null
+  display_snippet: null
 
 - field_name: start_period
   label: Start Period
@@ -117,3 +121,8 @@ resource_fields:
 - field_name: format
   label: Format
   preset: resource_format_autocomplete
+
+- field_name: pkg_publishing_status
+  label: Publishing Status
+  form_snippet: null
+  display_snippet: null

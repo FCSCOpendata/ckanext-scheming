@@ -42,7 +42,13 @@
       -%}
     {%- endif -%}
   {%- endfor -%}
-
+  {% if stage %}
+    {% if stage != 1 %}
+      {% if 'complete' in stage %}
+        <input id="field-pkg_publishing_status" type="hidden" name="pkg_publishing_status" value="published" />
+      {% endif %}
+    {% endif %}
+  {% endif %}
 {% endblock %}
 
 
