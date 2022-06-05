@@ -88,6 +88,12 @@ dataset_fields:
   form_snippet: null
   display_snippet: null
 
+- field_name: approval_state
+  label: Approval
+  validators: ignore_missing state_validator
+  preset: hidden_text
+  display_snippet: null
+
 - field_name: start_period
   label: Start Period
   form_placeholder: 2019-05
