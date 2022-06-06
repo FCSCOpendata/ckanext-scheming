@@ -22,6 +22,7 @@ not used as a form_snippet directly #}
         field.get('form_select_attrs', {'data-module':'autocomplete'})) }}>
       {% if not group_required or field.get('form_include_blank_choice', false) %}
       {% endif %}
+      {% set groups_available = h.get_group_list() %}
       {% for group in groups_available %}
         {% set selected_group = group.id in existing_group %}
         {{ group_option_tag(group, selected_group) }}
