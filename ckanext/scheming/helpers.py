@@ -10,6 +10,8 @@ from jinja2 import Environment
 from ckantoolkit import config, _
 
 from ckanapi import LocalCKAN, NotFound, NotAuthorized
+import ckan.model as model
+import ckan.lib.dictization.model_dictize as model_dictize
 
 all_helpers = {}
 
@@ -433,3 +435,13 @@ def scheming_flatten_subfield(subfield, data):
         for k in record:
             flat[prefix + k] = record[k]
     return flat
+
+@helper
+def get_group_list():
+    context = {'model':model}
+    q = model.Session.query(model.Group) \
+        .filter(model.Group.is_organization == False) \
+        .filter(model.Group.state == 'active')
+    groups = q.all()
+    group_list = model_dictize.group_list_dictize(groups, context)
+    return group_list
