@@ -187,6 +187,12 @@
         "form_snippet": "datepick.html",
         "validators": "ignore_missing convert_to_json_if_date"
       }
+    },
+    {
+      "preset_name": "hidden_text",
+      "values": {
+        "form_snippet": "hidden_text.html"
+      }
     }
   ]
 }
