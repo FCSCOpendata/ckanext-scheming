@@ -59,7 +59,7 @@
       }
     },
     {
-      "preset_name": "dataset_theme",
+      "preset_name": "dataset_topic",
       "values": {
         "validators": "ignore_missing unicode",
         "form_snippet": "group.html"

@@ -38,9 +38,9 @@ dataset_fields:
   label: Organization
   preset: dataset_organization
 
-- field_name: themes
-  label: Theme
-  preset: dataset_theme
+- field_name: topics
+  label: Topics
+  preset: dataset_topic
   
 - field_name: url
   label: Source
