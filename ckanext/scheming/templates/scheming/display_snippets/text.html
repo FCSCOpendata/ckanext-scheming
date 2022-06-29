@@ -1,1 +1,10 @@
-{{ data[field.field_name] }}
+{% if field.field_name == 'topics' %}
+	{% set topics = h.dispay_groups_name(data[field.field_name]) %}
+	<ul class="group-list">
+	{% for topic in topics %}
+			<li><a href="{{ h.url_for('group_read', id=topic.name) }}" class="group"> {{topic.title}}</a></li>
+	{% endfor %}
+	</ul>
+{% else %}
+	{{ data[field.field_name] }}
+{% endif %}
