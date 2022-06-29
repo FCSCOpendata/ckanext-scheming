@@ -15,7 +15,7 @@ fields:
   form_placeholder: eg. my-group
 
 - field_name: not_used
-  label: Parent Theme
+  label: Parent Topic
   display_snippet: null
   form_snippet: group_hierarchy.html
   validators: ignore_missing
