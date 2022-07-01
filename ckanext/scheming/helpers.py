@@ -445,3 +445,16 @@ def get_group_list():
     groups = q.all()
     group_list = model_dictize.group_list_dictize(groups, context)
     return group_list
+
+@helper
+def dispay_groups_name(group_ids): 
+    if isinstance(group_ids, str):
+        try:
+            groups = eval(group_ids)
+        except:
+            groups = [group_ids]
+    groups = model.Session.query(model.Group) \
+    .filter(model.Group.id.in_(groups) ) \
+    .filter(model.Group.is_organization == False) \
+    .filter(model.Group.state == 'active').all()
+    return groups
