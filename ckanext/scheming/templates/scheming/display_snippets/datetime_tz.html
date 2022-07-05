@@ -1,1 +1,3 @@
-{{ h.render_datetime(data[field.field_name], date_format='%Y-%m-%d %H:%M %Z') }}
+<span class="automatic-local-datetime" data-datetime="{{ h.render_datetime(data[field.field_name], date_format='%Y-%m-%dT%H:%M:%S%z') }}">
+    {{ h.render_datetime(data[field.field_name], with_hours=True) }}
+</span>
