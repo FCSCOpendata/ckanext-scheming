@@ -105,18 +105,6 @@ dataset_fields:
   form_placeholder: 2022-05
   preset: datepick
   form_attrs: {'data-module': 'datepicker', 'data-date-format': 'yyyy-mm'}
-
-- field_name: metadata_created
-  label: Created
-  form_snippet: null
-  display_property: dc:metadata_created
-  display_snippet: datetime_tz.html
-
-- field_name: metadata_modified
-  label: Last Updated
-  form_snippet: null
-  display_property: dc:metadata_modified
-  display_snippet: datetime_tz.html
   
 
 resource_fields:
