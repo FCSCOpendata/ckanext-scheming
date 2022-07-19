@@ -81,18 +81,20 @@
       "values": {
         "validators": "ignore_missing unicode remove_whitespace",
         "form_snippet": "organization_upload.html",
-        "form_placeholder": "http://example.com/my-data.csv"
+        "form_placeholder": "http://example.com/my-data.csv",
+        "upload_clear": "clear_upload",
+        "upload_label": "Picture"
       }
     },
     {
       "preset_name": "group_icon",
       "values": {
         "validators": "ignore_missing unicode remove_whitespace",
-        "form_snippet": "icon_upload.html",
+        "form_snippet": "logo_upload.html",
         "": "http://example.com/my-camel-photo.jpg",
-        "upload_field": "icon_upload",
-        "upload_clear": "clear_upload",
-        "upload_label": "Icon"
+        "upload_field": "logo_upload",
+        "upload_clear": "clear_logo_upload",
+        "upload_label": "Logo"
       }
     },
     {

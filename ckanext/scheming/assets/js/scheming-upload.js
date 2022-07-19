@@ -39,7 +39,7 @@ this.ckan.module('image-upload', function ($) {
 			var field_clear = 'input[name="' + options.field_clear + '"]';
 			var field_name = 'input[name="' + options.field_name + '"]';
 
-			this.field_upload_icon = $('input[name="icon_url"]');
+			this.field_upload_logo = $('input[name="logo_url"]');
 			this.input = $(field_upload, this.el);
 			this.field_url = $(field_url, this.el).parents('.form-group');
 			this.field_image = this.input.parents('.form-group');
@@ -129,8 +129,8 @@ this.ckan.module('image-upload', function ($) {
 				this.field_url_input.prop('readonly', true);
 				// If the data is an uploaded file, the filename will display rather than whole url of the site
 				var filename = this._fileNameFromUpload(this.field_url_input.val());
-				if (this.options.field_upload === 'icon_upload') {
-					this.field_upload_icon.val(filename);
+				if (this.options.field_upload === 'logo_upload') {
+					this.field_upload_logo.val(filename);
 				} else {
 					this.field_url_input.val(filename);
 				}
@@ -226,8 +226,8 @@ this.ckan.module('image-upload', function ($) {
 				file_name = fName ? fName[0] : file_name;
 			}
 
-			if (this.options.field_upload === 'icon_upload') {
-				 this.field_upload_icon.val(file_name);
+			if (this.options.field_upload === 'logo_upload') {
+				 this.field_upload_logo.val(file_name);
 			} else {
 				this.field_url_input.val(file_name);
 			}
@@ -308,8 +308,8 @@ this.ckan.module('image-upload', function ($) {
 		 */
 		_autoName: function (name) {
 			if (!this._nameIsDirty) {
-				if (this.options.field_upload === 'icon_upload') {
-					this.field_upload_icon.val(file_name);
+				if (this.options.field_upload === 'logo_upload') {
+					this.field_upload_logo.val(file_name);
 			 } else {
 				 this.field_url_input.val(file_name);
 			 }
